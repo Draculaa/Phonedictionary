@@ -1,0 +1,33 @@
+﻿<Window x:Class="Wpf_Phonedictionary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Телефонный справочник" Height="475.373" Width="957.836">
+    <Grid>
+        <DataGrid x:Name="DataGrid1" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="409,165,0,0" VerticalAlignment="Top" Height="222" Width="512" AlternationCount="-4">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="39" Margin="171,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157" RenderTransformOrigin="0.482,0.533">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.072"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Height="41" Margin="171,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Добавить контакт" HorizontalAlignment="Left" Height="45" Margin="132,338,0,0" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.5,0.5" Click="Button_Click_2"/>
+        <Button Content="Показать все контакты" HorizontalAlignment="Left" Height="42" Margin="90,165,0,0" VerticalAlignment="Top" Width="239" Click="Button_Click_1"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Height="42" Margin="488,62,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="42" Margin="301,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="42" Margin="674,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Введите имя контакта:" HorizontalAlignment="Left" Height="42" Margin="138,62,0,0" VerticalAlignment="Top" Width="135"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Height="39" Margin="92,228,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Height="41" Margin="92,272,0,0" VerticalAlignment="Top" Width="52"/>
+
+    </Grid>
+</Window>
